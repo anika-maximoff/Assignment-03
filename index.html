@@ -178,7 +178,7 @@
 
 
         <!-- section 4 latest portfolio design -->
-        <section class="px-10 lg:px-24 bg-white py-20">
+        <section class="px-10 lg:px-24 bg-white py-20 bg-stone-50">
             <div class="flex flex-col text-center items-center pb-10">
                 
                 <div class="items-center">
@@ -251,7 +251,7 @@
         </section>
 
         <!-- Discussion Section -->
-         <section>
+         <section class="px-10 lg:px-24 py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
             <div class="flex flex-col items-center">
                 <div class="items-center">
                     <button class="flex items-center gap-2 bg-[#EBFFD5] px-7 py-2 rounded-full">
@@ -273,7 +273,7 @@
                     <p class="text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
                 </div>
                 <form action="">
-                    <div class="grid grid-cols-1 gap-5 w-full">
+                    <div class="flex flex-col gap-5 w-full">
                         <div class="border-2 border-gray-50 w-full p-3 rounded-full">
                             <label for="name"></label>
                             <input id="name" type="text" placeholder="First Name*">
@@ -294,11 +294,49 @@
                             <textarea name="" id="" placeholder="Write your message here"></textarea>
                         </div>
                     </div>
+                    <div class="flex gap-2 items-center bg-[#ABEF5F] py-1.5 px-3 rounded-full">
+                        <div class="font-extrabold">Book Consult</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-black rounded-full p-2 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </div>
+                    </div>
                 </form>              
             </div>
 
          </section>
     </main>
-    <footer></footer>
+    <footer class="px-10 lg:px-24 bg-black py-20">
+        <div class="flex flex-col items-center gap-5">
+            <div class="flex gap-1 items-center">
+                <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 bg-[#ABEF5F] rounded-full p-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                  </div>
+                <div><h3 class="text-5xl font-bold text-white">Rinterio</h3></div>
+            </div>
+            <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <div class="text-white font-semibold">
+                <ul class="text-center">
+                    <li class="p-5 text-[#E9E9E9]">Home</li>
+                    <li class="p-5 text-[#E9E9E9]">Service</li>
+                    <li class="p-5 text-[#E9E9E9]">Portfolio</li>
+                    <li class="p-5 text-[#E9E9E9]">Blogs</li>
+                    <li class="p-5 text-[#E9E9E9]">Contact Us</li>
+                </ul>
+            </div>
+            <div class="flex gap-2 items-center justify-center bg-[#ABEF5F] py-1.5 px-auto rounded-full w-full lg:w-[40%]">
+                <p>Book Consult</p>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-black rounded-full p-2 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                
+            </div>
+        </div>
+            
+        
+    </footer>
 </body>
 </html>
