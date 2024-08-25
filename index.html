@@ -93,7 +93,7 @@
     <main>
 
         <!-- section 2 design -->
-        <section class="flex flex-col md:grid md:grid-cols-2 py-20 lg:pb-0 bg-stone-50 px-10 lg:px-24">
+        <section class="flex flex-col md:grid md:grid-cols-2 py-10 lg:py-20 lg:pb-0 bg-stone-50 px-10 lg:px-24">
             <div class="text-[#494949] lg:mr-10 ">
                 <div class="flex flex-col lg:items-start relative items-center text-center lg:text-left ">
                     <div class="hidden lg:flex absolute -top-16 -left-16"><img src="/assets/Vector.png" alt=""></div>
@@ -113,9 +113,33 @@
                     <div><h5 class="text-xl font-extrabold">Residential</h5><p>The barn house captivates with its blend of rustic <br> charm and modern.</p></div>
                 </div>
             </div>
-            <div class="mt-5 lg:mt-10">
-                <img  class=" lg:h-3/4 lg:w-full" src="./assets/Rectangle.png" alt="">
+            <div class="mt-5 lg:mt-10 pt-10">
+                <img  class=" h-3/4 lg:h-full lg:w-full" src="./assets/Rectangle.png" alt="">
 
+            </div>
+            <div class="bg-white my-10 p-10 gap-10 lg:my-20 lg:p-20 col-span-2 rounded-3xl">
+                <div class="grid lg:flex lg:justify-around gap-5 ">
+                    <div class="items-center text-center bg-[#FFE8F3] hover:bg-[#FF83BE] hover:border-4 hover:border-gray-200  p-[50px] drop-shadow-md rounded-xl">
+                        <i class="fa-regular fa-message text-[#737373] hover:text-white"></i>
+                        <h2 class="font-bold text-2xl text-[#494949] hover:text-white">235+</h2>
+                        <p class="text-[#737373] hover:text-white">Happy Client Review</p>
+                    </div>
+                    <div class="items-center text-center bg-[#FFE8E8] hover:bg-[#FF7878] drop-shadow-md hover:border-4 hover:border-gray-200 p-[50px] rounded-xl">
+                        <i class="fa-solid fa-briefcase text-[#737373] hover:text-white"></i>
+                        <h2 class="font-bold text-2xl text-[#494949] hover:text-white">50+</h2>
+                        <p class="text-[#737373] hover:text-white">Work Department</p>
+                    </div>
+                    <div class="items-center text-center bg-[#FCDCFF] hover:bg-[#F384FF] drop-shadow-md hover:border-4 hover:border-gray-200 p-[50px] rounded-xl">
+                        <i class="fa-regular fa-face-smile text-[#737373] hover:text-white"></i>
+                        <h2 class="font-bold text-2xl text-[#494949] hover:text-white">30k+</h2>
+                        <p class="text-[#737373] hover:text-white">Our Happy Clints</p>
+                    </div>
+                    <div class="items-center text-center bg-[#FFE9D9] hover:bg-[#FCB17C] drop-shadow-md hover:border-4 hover:border-gray-200 p-[50px]  rounded-xl">
+                        <i class="fa-solid fa-user-group text-[#737373] hover:text-white"></i>
+                        <h2 class="font-bold text-2xl text-[#494949] hover:text-white">235+</h2>
+                        <p class="text-[#737373] hover:text-white">Stuff Members</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -259,20 +283,11 @@
         </section>
 
         <!-- Discussion Section -->
-         <section class="px-10 lg:px-24 py-20 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
-            <div class="flex flex-col items-center">
-                <div class="items-center">
-                    <button class="flex items-center gap-2 bg-[#EBFFD5] px-7 py-2 rounded-full">
-                        
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                              </svg>
-                              
-                            
-                        </div>
-                        <div class="font-extrabold">Let's Connect</div>
-                    </button>
+         <section class=" relative px-10 lg:px-24 py-20">
+            <div class="absolute inset-0 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover filter opacity-50 z-0"></div>
+            <div class=" relative grid grid-cols-1 items-center text-center lg:px-20">
+                <div class=" flex justify-center items-center text-center">
+                    <button class="flex items-center gap-2 bg-[#EBFFD5] px-7 py-2 rounded-full"><i class="fa-solid fa-arrow-right"></i>Let's Connect</button>
                 </div>
                 <br>
                 <div>
@@ -280,37 +295,39 @@
                     <br>
                     <p class="text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
                 </div>
-                <form action="">
-                    <div class="flex flex-col gap-5 w-full">
-                        <div class="border-2 border-gray-50 w-full p-3 rounded-full">
-                            <label for="name"></label>
-                            <input id="name" type="text" placeholder="First Name*">
+                <form class="p-6 ">
+                    <div class=" flex flex-col md:grid md:grid-cols-2 gap-4">
+                        <!-- Form input -->
+                        <div class="">
+                            <label for="first_name" class=""></label>
+                            <input type="text" id="first_name" name="first_name" placeholder="First Name*" class="w-full rounded-full p-4">
                         </div>
-                        <div class="border-2 border-gray-50 w-full p-3 rounded-full">
-                            <label for="name"></label>
-                            <input id="name" type="text" placeholder="Last Name*">
+                        <div class="rounded-full">
+                            <label for="last_name" class=""></label>
+                            <input type="text" id="first_name" name="last_name" placeholder="Last Name*" class="w-full rounded-full p-4">
                         </div>
-                        <div class="border-2 border-gray-50 w-full p-3 rounded-full">
-                            <label for="name"></label>
-                            <input id="name" type="text" placeholder="Phone Number*">
+                        <div class="rounded-full">
+                            <label for="phn-no" class=""></label>
+                            <input type="text" id="phn-no" name="phn-no" placeholder="Phone Number*" class="w-full rounded-full p-4"> 
                         </div>
-                        <div class="border-2 border-gray-50 w-[150%]  p-3 rounded-full">
-                            <label for="name"></label>
-                            <input id="name" type="text" placeholder="Email Address*">
+                        <div class="rounded-full">
+                            <label for="email" class=""></label>
+                            <input type="text" id="email" name="email" placeholder="Email Address*" class="w-full rounded-full p-4">
                         </div>
-                        <div class="border-2 border-gray-50 p-3 rounded-[30px] h-80">
-                            <textarea name="" id="" placeholder="Write your message here"></textarea>
+                        <div class="lg:col-span-2">
+                            <label for="message" class=""></label>
+                            <textarea name="message" id="message" rows="10" placeholder="Write your message here" class="w-full rounded-3xl p-4" ></textarea>
+                            
                         </div>
-                    </div>
-                    <div class="flex gap-2 items-center bg-[#ABEF5F] py-1.5 px-3 rounded-full">
-                        <div class="font-extrabold">Book Consult</div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-black rounded-full p-2 text-white">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>
+                        <div class="flex gap-2 items-center justify-center bg-[#ABEF5F] py-1.5 px-3 rounded-full lg:col-span-2 opacity-full">
+                            <div class="font-extrabold">Send Mail</div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 bg-black rounded-full p-2 text-white ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                </svg>
+                            </div>
                         </div>
-                    </div>
-                </form>              
+                             
             </div>
 
          </section>
